@@ -1150,7 +1150,7 @@ i:before {
 
 .slider_btn {
   display: inline-block;
-  border: 2px solid #fff;
+  border: 2px solid  #fff;
   padding: 0px 27px;
   line-height: 46px;
   color: #fff;
@@ -1296,20 +1296,20 @@ i:before {
 }
 
 .main_slider_area ul li .slider_text_box .first_text {
-  color: #fff;
+  color:#fff;
   font-weight: 600 !important;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
 }
 
 .main_slider_area ul li .slider_text_box .secand_text {
-  color: #fff;
+  color:#fff;
   font-family: "Lato", sans-serif;
   letter-spacing: .54px;
 }
 
 .main_slider_area ul li .slider_text_box .middle_f_text {
-  color: #fff;
+  color:#fff;
   font-family: "PT Sans", sans-serif;
   font-style: italic;
   position: relative;
