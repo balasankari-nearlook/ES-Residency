@@ -6812,6 +6812,33 @@ i:before {
 .color{
   color: #ffb606;
 }
+.tc{
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffb606;
+  letter-spacing: .96px;
+  position: relative;
+}
+.tc1{
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #ffb606;
+  letter-spacing: .96px;
+  position: relative;
+}
+.text1{
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  color:#898989;
+
+  position: relative;
+}
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
