@@ -43,17 +43,22 @@
         
         <link href="css/style.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+       
       
     <body>
 
         <!--================Header Area =================-->
+       
         <header class="main_header_area">
             <div class="header_top">
-                <div class="container">
+                <div class="container " >
                     <div class="header_top_inner">
                         <div class="pull-left">
                             <a href="tel:9842155225"><i class="fa fa-phone"></i>98421 55225</a>
+                            <a href="tel:9790655330"><i class="fa fa-phone"></i>9790655330</a>
                             <a href="mailto:info@esresidency.com"><i class="fa fa-envelope-o"></i>info@esresidency.com</a>
                         </div>
                         <div class="pull-right">
@@ -69,7 +74,7 @@
             </div>
             <div class="header_menu">
                 <nav class="navbar navbar-default">
-                    <div class="container">
+                    <div class="container f-none">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -77,8 +82,8 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">
+                            </button> 
+                            <a class="navbar-brand " href="#">
                                 <img src="img/es logo/es logo white.png" alt="" style="width: 150px;">
                                 <!-- <img src="img/es logo black.png" alt="" style="width: 130px;"> -->
                             </a>
@@ -87,15 +92,8 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="dropdown submenu active">
-                                    <a href="index.html" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                                    <!-- <ul class="dropdown-menu">
-                                        <li><a href="index.html">Home Page 1</a></li>
-                                        <li><a href="index-2.html">Home Page 2</a></li>
-                                        <li><a href="index-3.html">Home Page 3</a></li>
-                                        <li><a href="index-4.html">Home Page 4</a></li>
-                                    </ul> -->
-                                </li>
+                                
+                                <li class=" active"> <a href="index.html">Home</a></li>
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -147,18 +145,25 @@
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <!-- <li class="search_dropdown">
-                                    <a class="popup-with-zoom-anim" href="#test-search"><i class="icon icon-Search"></i></a>
-                                </li> -->
+                                
                                 <li class="book_btn">
-                                    <a class="book_now_btn" href="#">Book now</a>
+                                    <a class="book_now_btn" href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book now</a>
+
                                 </li>
                             </ul>
+                            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                Open modal
+                              </button> -->
+                          
+                            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                Open modal
+                              </button> -->
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
                 </nav>
             </div>
         </header>
+        
         <!--================Header Area =================-->
         
         <!--================Slider Area =================-->
@@ -531,7 +536,108 @@
             </div>
         </div>
         <!--================End Our Resort Gallery Area =================-->
-        
+        <section class="our_resort_gallery_area">
+            <div class="middle_title">
+                <h2>Tourist <span> Places</span></h2>
+                <p>Wake up to stunning views from the windows of your room.</p>
+            </div>
+        </section>
+        <div class="resort_gallery_inner imageGallery1">
+            <div class="resort_gallery owl-carousel">
+                <div class="item">
+                    <img src="img/image-sliders/1.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/1.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Vaigai Dam</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/2.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/2.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Munnar</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/3.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/3.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Thekkady Wildlife Sanctuary</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/4.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/4.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Kodaikanal</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/5.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/5.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Meghamalai Tea Estates</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/6.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/6.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Vellimalai</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/7.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/7.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Sothuparai Dam</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/8.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/8.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Kumbakkarai Falls</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/9.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/9.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Suruli Falls</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/image-sliders/10.jpg" alt="">
+                    <div class="resort_g_hover">
+                        <div class="resort_hover_inner">
+                            <a class="light" href="img/image-sliders/10.jpg"><i class="fa fa-expand" aria-hidden="true"></i></a> 
+                            <h5>Meghamalai Wildlife Sanctuary</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--================Client Testimonial Area =================-->
         <section class="client_area">
             <div class="container">
@@ -571,7 +677,7 @@
                                     <div class="news_text">
                                         <a class="l_date" href="#">26 Dec 2023</a>
                                         <a href="#"><h4>A Night in Resort with Family</h4></a>
-                                        <p>Gather around a campfire if the resort offers one. Roast marshmallows, tell stories, and enjoy the warmth of the fire under the starlit sky.</p>
+                                        <p>At ES Residency, guests say it's like living in today's news. They come as guests and leave as well-informed travelers.</p>
                                         
                                     </div>
                                 </div>
@@ -584,7 +690,7 @@
                                     <div class="news_text">
                                         <a class="l_date" href="#">26 Dec 2023</a>
                                         <a href="#"><h4>A Night in residency with Family</h4></a>
-                                        <p>Spend some time stargazing with your family. Head to a quiet spot away from the residency lights and admire the beauty of the night sky.</p>
+                                        <p>At ES Residency, visitors often feel like they're part of the latest news. They come as guests and leave as informed travelers.</p>
                                        
                                     </div>
                                 </div>
@@ -602,7 +708,7 @@
                                         <h3>17<span>Aug</span></h3>
                                     </div>
                                     <div class="media-body">
-                                        <h4>Anniversary of our residency</h4>
+                                        <h4>Food Festivel</h4>
                                     </div>
                                 </div>
                                 <div class="media">
@@ -692,6 +798,9 @@
         <!--================End Fun Fact Area =================-->
         
         <!--================Footer Area =================-->
+
+        
+
         <footer class="footer_area">
             <div class="footer_widget_area">
                 <div class="container">
@@ -714,11 +823,27 @@
                                         </div>
                                         <div class="media-body">
                                            <a class="footer"href="tel:9842155225"> <h4>9842155225</h4></a>
-                                        </div>
+                                        </div>   
                                     </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="media-body">
+                                           <a class="footer"href="tel:9790655330"> <h4 style="font-size: 14px;">9790655330</h4></a>
+                                        </div>   
+                                    </div>
+                                    <!-- <div class="media">
+                                        <div class="media-left">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="media-body">
+                                           <a class="footer"href="tel:9790655330"> <h6>9790655330</h6></a>
+                                        </div>
+                                    </div>  -->
                                 </div>
                                 <div class="book_now_area">
-                                    <a class="book_now_btn" href="#">Book now</a>
+                                    <a class="book_now_btn" href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book now</a>
                                 </div>
                             </aside>
                         </div>
@@ -796,12 +921,88 @@
         </div>
         <!--================End Search Box Area =================-->
         
-        
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <!-- <h4 class="modal-title">Modal Heading</h4> -->
+                  <div class="left_ex_title1">
+                    <h2>Book<span>Now</span></h2>
+                </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div >
+                        <div class="col-12">
+                            <form class="contact_us_form row m0" action="#" method="post" id="contactForm" novalidate="novalidate">
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name*" required>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="tel" class="form-control" id="number" name="number" placeholder="Phone no.*" required>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message*" required></textarea>
+                                </div>
+                                <div class="form-group col-md-12 text-center">
+                                    <button type="submit" class="" style="font-family: Montserrat, sans-serif; font-size: 15px; width:150px; height:50px; background-color:  #ffb606;border-radius: 5px;" disabled>Submit now</button>
+                                </div>
+                            </form>
+                        </div>
+                       
+                </div>
+          
+                <!-- Modal footer -->
+               
+          
+              </div>
+            </div>
+          </div>
         
         
         
         <!--================End Footer Area =================-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <script>
+           document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('contactForm');
+        var submitButton = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('input', function () {
+            if (form.checkValidity()) {
+                submitButton.removeAttribute('disabled');
+            } else {
+                submitButton.setAttribute('disabled', 'disabled');
+            }
+        });
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission for this example
+
+            // Replace with your WhatsApp integration logic
+            var name = form.querySelector('#name').value;
+            var email = form.querySelector('#email').value;
+            var number = form.querySelector('#number').value;
+            var message = form.querySelector('#message').value;
+
+            // Example: Open WhatsApp with pre-filled message
+            var whatsappMessage = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + number + '\nMessage: ' + message);
+            window.open('https://wa.me/9790655330/?text=' + whatsappMessage, '_blank');
+
+            // Optionally, reset the form after submission
+            form.reset();
+            submitButton.setAttribute('disabled', 'disabled');
+        });
+    });
+        </script> 
         <script src="js/jquery-2.2.4.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
@@ -830,6 +1031,9 @@
         <script type="text/javascript" src="vendors/instafeed/script.js"></script>
         
         <script src="js/theme.js"></script>
+
+         <!-- <script src="script.js"></script>  -->
+
     </body>
 
 

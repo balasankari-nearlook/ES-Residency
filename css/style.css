@@ -55,10 +55,12 @@ ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
+ 
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+
 }
 
 a:hover, a:focus {
@@ -150,6 +152,20 @@ i:before {
   font-size: 16px;
   letter-spacing: .48px;
   padding-top: 30px;
+}
+
+.left_ex_title1 h2 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffb606;
+  letter-spacing: .96px;
+  position: relative;
+}
+
+.left_ex_title1 h2 span {
+  color: #242424;
 }
 
 .left_ex_title h2 {
@@ -551,7 +567,7 @@ i:before {
 .header_menu .navbar.navbar-default .navbar-header .navbar-brand {
   height: 85px;
   line-height: 75px;
-  padding: 0px 0px 0px 15px;
+  /* padding: 0px 0px 0px 15px; */
 }
 
 .header_menu .navbar.navbar-default .navbar-header .navbar-brand img {
@@ -5629,7 +5645,8 @@ i:before {
   border-right: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
   padding: 40px;
-  height:250px;
+  height:300px;
+  /* width: 570px; */
 }
 
 .event_two_item .event_two_text .media .media-left {
@@ -6838,6 +6855,20 @@ i:before {
   color:#898989;
 
   position: relative;
+}
+.text2{
+  margin-top: 10px;
+  color: #ffb606;
+  font-weight: 800;
+}
+
+
+.f-none{
+  display:inline-block !important;
+  
+}
+.modal{
+  margin-top: 150px;
 }
 /* End Footer Area css
 ============================================================================================ */

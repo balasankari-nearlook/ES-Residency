@@ -45,6 +45,8 @@
         
         <link href="css/style.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
        
     </head>
@@ -56,7 +58,8 @@
                 <div class="container">
                     <div class="header_top_inner">
                         <div class="pull-left">
-                            <a href="tel:9842155225"><i class="fa fa-phone"></i>98421 55225</a>
+                            <a href="tel:9842155225"><i class="fa fa-phone"></i>9842155225</a>
+                            <a href="tel:9790655330"><i class="fa fa-phone"></i>9790655330</a>
                             <a href="mailto:info@esresidency.com"><i class="fa fa-envelope-o"></i>info@esresidency.com</a>
                         </div>
                         <div class="pull-right">
@@ -72,16 +75,16 @@
             </div>
             <div class="header_menu">
                 <nav class="navbar navbar-default">
-                    <div class="container">
+                    <div class="container f-none">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">
+                            </button> 
+                            <a class="navbar-brand " href="#">
                                 <img src="img/es logo/es logo white.png" alt="" style="width: 150px;">
                                 <!-- <img src="img/es logo black.png" alt="" style="width: 130px;"> -->
                             </a>
@@ -90,10 +93,11 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="dropdown submenu ">
+                                <!-- <li class="dropdown submenu ">
                                     <a href="index.html" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                                    
-                                </li>
+                                </li> -->
+                                <li><a href="index.html">Home</a></li>
                                 <li ><a href="about-us.html" >About Us</a></li>
                                 <li class="submenu dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -115,7 +119,7 @@
                                     <a class="popup-with-zoom-anim" href="#test-search"><i class="icon icon-Search"></i></a>
                                 </li> -->
                                 <li class="book_btn">
-                                    <a class="book_now_btn" href="#">Book now</a>
+                                    <a class="book_now_btn" href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book now</a>
                                 </li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -250,9 +254,17 @@
                                            <a class="footer"href="tel:9842155225"> <h4>9842155225</h4></a>
                                         </div>
                                     </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="media-body">
+                                           <a class="footer"href="tel:9790655330"> <h4 style="font-size: 14px;">9790655330</h4></a>
+                                        </div>   
+                                    </div>
                                 </div>
                                 <div class="book_now_area">
-                                    <a class="book_now_btn" href="#">Book now</a>
+                                    <a class="book_now_btn" href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book now</a>
                                 </div>
                             </aside>
                         </div>
@@ -359,11 +371,85 @@
         </div>
         <!--================End Contact Success and Error message Area =================-->
         
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <!-- <h4 class="modal-title">Modal Heading</h4> -->
+                  <div class="left_ex_title1">
+                    <h2>Book<span>Now</span></h2>
+                </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div >
+                        <div class="col-12">
+                            <form class="contact_us_form row m0" action="#" method="post" id="contactForm" novalidate="novalidate">
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name*" required>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input type="tel" class="form-control" id="number" name="number" placeholder="Phone no.*" required>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message*" required></textarea>
+                                </div>
+                                <div class="form-group col-md-12 text-center">
+                                    <button type="submit" class="" style="font-family: Montserrat, sans-serif; font-size: 15px; width:150px; height:50px; background-color:  #ffb606;border-radius: 5px;" disabled>Submit now</button>
+                                </div>
+                            </form>
+                        </div>
+                       
+                </div>
+          
+                <!-- Modal footer -->
+               
+          
+              </div>
+            </div>
+          </div>
         
         
         
-        
-        
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+         var form = document.getElementById('contactForm');
+         var submitButton = form.querySelector('button[type="submit"]');
+ 
+         form.addEventListener('input', function () {
+             if (form.checkValidity()) {
+                 submitButton.removeAttribute('disabled');
+             } else {
+                 submitButton.setAttribute('disabled', 'disabled');
+             }
+         });
+ 
+         form.addEventListener('submit', function (event) {
+             event.preventDefault(); // Prevent form submission for this example
+ 
+             // Replace with your WhatsApp integration logic
+             var name = form.querySelector('#name').value;
+             var email = form.querySelector('#email').value;
+             var number = form.querySelector('#number').value;
+             var message = form.querySelector('#message').value;
+ 
+             // Example: Open WhatsApp with pre-filled message
+             var whatsappMessage = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + number + '\nMessage: ' + message);
+             window.open('https://wa.me/9790655330/?text=' + whatsappMessage, '_blank');
+ 
+             // Optionally, reset the form after submission
+             form.reset();
+             submitButton.setAttribute('disabled', 'disabled');
+         });
+     });
+         </script> 
         <!--================End Footer Area =================-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-2.2.4.js"></script>
