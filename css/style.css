@@ -6803,10 +6803,17 @@ i:before {
   color: #ffb606;
 }
 .about{
-  color:#000;
+  /* color:#000;
   text-align: justify;
   margin-top: 15px;
   margin-bottom: 30px;
+  font-size: 12px; */
+  font-size: 15px;
+    line-height: 26px;
+    font-family: "Open Sans", sans-serif;
+    color: #898989;
+    text-align: justify;
+    padding-left: 30px;;
 }
 .about-h{
   color: #ffb606;
